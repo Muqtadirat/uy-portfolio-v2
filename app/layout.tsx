@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter } from "@/assets/fonts";
+import { inter, space_grotesk } from "@/assets/fonts";
 import "./globals.css";
 import Layout from "./_layout/Index";
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${space_grotesk.variable}`}>
         <Layout>{children}</Layout>
       </body>
     </html>

@@ -22,7 +22,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         onClick={setShowMenu}
         pathname={pathname}
       />
-      <main className="px-6 py-10 lg:px-[4.5rem] lg:py-16">{children}</main>
+      <main className="pt-32 pb-10 lg:py-32">
+        {children}
+      </main>
     </>
   );
 };

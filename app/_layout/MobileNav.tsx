@@ -17,37 +17,43 @@ const MobileNav: React.FC<MobileNavProps> = ({
   onClick,
 }) => {
   return (
-    <nav className={`flex lg:hidden justify-between items-center px-6 py-8`}>
-      <Link href="/">
-        <Image src={logo} alt="logo" priority />
-      </Link>
-      <div className="flex gap-7">
-        <PrimaryButton>Send me a mail</PrimaryButton>
-        <Hamburger size={26} color="#fff" onToggle={() => onClick(!showMenu)} />
-      </div>
-
-      {showMenu && (
-        <div
-          className={`absolute bg-white text-black top-28 bg-gr left-0 right-0 transition-transform duration-300 ease-in-out ${
-            showMenu ? "translate-x-0" : "translate-x-full"
-          }`}
-          onClick={() => onClick(false)}
-        >
-          <ul className="flex flex-col gap-8 items-center">
-            {navLinks.map(({ title, href }) => (
-              <Link
-                href={href}
-                key={title}
-                className={`${
-                  pathname === href ? "text-white" : "text-greyScale-40"
-                }`}
-              >
-                <li>{title}</li>
-              </Link>
-            ))}
-          </ul>
+    <nav className="fixed w-full bg-greyScale-10">
+      <div className={`flex lg:hidden justify-between items-center px-6 py-8`}>
+        <Link href="/">
+          <Image src={logo} alt="logo" priority />
+        </Link>
+        <div className="flex gap-7">
+          <PrimaryButton>Send me a mail</PrimaryButton>
+          <Hamburger
+            size={26}
+            color="#fff"
+            onToggle={() => onClick(!showMenu)}
+          />
         </div>
-      )}
+
+        {showMenu && (
+          <div
+            className={`absolute bg-white text-black top-28 bg-gr left-0 right-0 transition-transform duration-300 ease-in-out ${
+              showMenu ? "translate-x-0" : "translate-x-full"
+            }`}
+            onClick={() => onClick(false)}
+          >
+            <ul className="flex flex-col gap-8 items-center">
+              {navLinks.map(({ title, href }) => (
+                <Link
+                  href={href}
+                  key={title}
+                  className={`${
+                    pathname === href ? "text-white" : "text-greyScale-40"
+                  }`}
+                >
+                  <li>{title}</li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };
