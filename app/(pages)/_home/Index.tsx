@@ -1,4 +1,5 @@
 import Experience from "./Experience";
+import Work from "./Work";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       </div>
 
       <Experience />
+      <Work/>
     </>
   );
 };
