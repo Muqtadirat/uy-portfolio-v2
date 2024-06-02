@@ -23,7 +23,7 @@ const Experience = () => {
           return (
             <section
               key={company}
-              className="min-w-full mr-2 md:mr-0 mb-4 md:mb-0 snap-start md:flex items-baseline gap-10 lg:w-[52.5rem] md:ml-auto text-greyScale-90"
+              className="min-w-full md:min-w-0 mr-2 md:mr-0 mb-4 md:mb-0 snap-start md:flex items-baseline gap-10 lg:w-[52.5rem] md:ml-auto text-greyScale-90"
             >
               <div>
                 <p className="text-xl lg:text-[2rem] md:w-[20rem] font-bold">
