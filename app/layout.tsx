@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { inter, space_grotesk } from "@/assets/fonts";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Layout from "./_layout/Index";
 
 export const metadata: Metadata = {
   title: "UY Portfolio",
@@ -16,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${space_grotesk.variable}`}>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }
