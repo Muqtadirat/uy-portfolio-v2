@@ -6,15 +6,15 @@ interface NavLinkProps {
 const navLinks: NavLinkProps[] = [
   {
     title: "About",
-    href: "/about",
+    href: "#about",
   },
   {
     title: "Work",
-    href: "/work",
+    href: "#work",
   },
   {
     title: "Blog",
-    href: "/blog",
+    href: "https://medium.com/@uthmanyussuff",
   },
 ];
 

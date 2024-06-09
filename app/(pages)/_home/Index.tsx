@@ -20,7 +20,7 @@ const Home = () => {
         </p>
       </header>
       <div className="hidden lg:block font-grotesk h-screen">
-        <p className="text-[5rem] font-black text-center mx-auto">
+        <p className="text-[5rem] font-black text-center mx-auto text-greyScale-40 hover:text-white">
           How I <br /> create amazing <br /> products
         </p>
       </div>

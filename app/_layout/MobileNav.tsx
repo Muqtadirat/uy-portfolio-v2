@@ -11,6 +11,10 @@ interface MobileNavProps {
   onClick: (string: boolean) => void;
 }
 
+const sendMail = () => {
+  window.location.href = "mailto:uthmanyussuff@gmail.com";
+};
+
 const MobileNav: React.FC<MobileNavProps> = ({
   showMenu,
   pathname,
@@ -23,7 +27,7 @@ const MobileNav: React.FC<MobileNavProps> = ({
           <Image src={logo} alt="logo" priority />
         </Link>
         <div className="flex gap-7">
-          <PrimaryButton>Send me a mail</PrimaryButton>
+          <PrimaryButton onClick={sendMail}>Send me a mail</PrimaryButton>
           <Hamburger
             size={26}
             color="#fff"
@@ -43,6 +47,8 @@ const MobileNav: React.FC<MobileNavProps> = ({
                 <Link
                   href={href}
                   key={title}
+                  rel="noopener noreferrer"
+                  target={`${href.startsWith("#") ? "" : "_blank"}`}
                   className={`${
                     pathname === href ? "text-white" : "text-greyScale-40"
                   }`}
