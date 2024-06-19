@@ -11,7 +11,7 @@ const BackButton: React.FC<BackButtonProps> = ({ onClick }) => {
     <button
       type="button"
       onClick={onClick}
-      className="flex items-center gap-1.5 text-white justify-center mb-4 lg:mb-10 text-xs font-bold"
+      className="px-6 lg:px-[4.5rem] flex items-center gap-1.5 text-white justify-center mb-4 lg:mb-10 text-xs font-bold"
     >
       <Image src={arrowLeft} alt="Left arrow" />
       Back

@@ -13,20 +13,59 @@ export const overviewData: OverviewDataProps[] = [
   },
 ];
 
+interface SubtitleLabels {
+  subTitle: string;
+  labels: string[];
+}
+
 interface RecruitmentDataProps {
   title: string;
-  subTitles?: {};
-  subTitle?: string;
-  labels?: string[];
+  subTitleLabels: SubtitleLabels[];
 }
 
 export const criteriaData: RecruitmentDataProps[] = [
   {
     title: "Recruitment Criteria",
-    subTitles: {
-      subTitle: "",
-    },
-    // subTitle: "Renters",
-    labels: ["Aged 18 - 58", "Has a valid driver’s license", "Has a valid ID"],
+    subTitleLabels: [
+      {
+        subTitle: "Renters",
+        labels: [
+          "Aged 18 - 58",
+          "Has a valid driver’s license",
+          "Has a valid ID",
+        ],
+      },
+      {
+        subTitle: "Hosts",
+        labels: ["Aged 18 - 58", "Owns at least one car"],
+      },
+    ],
+  },
+];
+
+export const questionsData: RecruitmentDataProps[] = [
+  {
+    title: "Recruitment Questions",
+    subTitleLabels: [
+      {
+        subTitle: "Renters",
+        labels: [
+          "How do you move around Lagos?",
+          "What do you love about moving around Lagos?",
+          "What do you dislike about moving around Lagos?",
+          "How would you prefer to move around?",
+          "Have you ever rented a car, If yes how was your experience?",
+        ],
+      },
+      {
+        subTitle: "Hosts",
+        labels: [
+          "Do you rent your cars out?",
+          "If yes, how do you rent your car?",
+          "What are your favorite things about renting your car out?",
+          "What are your least favorite things about renting your car out?",
+        ],
+      },
+    ],
   },
 ];
