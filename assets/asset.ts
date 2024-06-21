@@ -1,4 +1,9 @@
 export { default as logo } from "./global/logo.svg";
+export {default as logoDesk} from "./global/logo-desk.svg"
+export {default as dribbleLogo} from "./global/dribble.svg"
+export {default as mediumLogo} from "./global/medium.svg"
+export {default as linkedinLogo} from "./global/linkedin.svg"
+export {default as twitterLogo} from "./global/twitter.svg"
 
 // images
 // acomart
@@ -24,7 +29,6 @@ export { default as prototype4 } from "./global/aufera/prototype4.png";
 export { default as onboarding } from "./global/aufera/onboarding.png";
 export { default as onboarding2 } from "./global/aufera/onboarding-2.png";
 export { default as onboarding3 } from "./global/aufera/onboarding-3.png";
-export { default as catalogue } from "./global/aufera/catalogue.png";
 
 // homefund
 export { default as homefundCard } from "./global/homefund/homefund-card.png";

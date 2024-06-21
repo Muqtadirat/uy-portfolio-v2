@@ -1,4 +1,4 @@
-import { logo } from "@/assets/asset";
+import { logoDesk } from "@/assets/asset";
 import Image from "next/image";
 import React from "react";
 import navLinks from "./navLinks";
@@ -18,7 +18,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ pathname }) => {
     <nav className="fixed z-40 w-full bg-greyScale-10">
       <div className="hidden lg:flex justify-between items-center px-[4.5rem] py-8">
         <Link href="/">
-          <Image src={logo} alt="logo" priority />
+          <Image src={logoDesk} alt="logo" priority />
         </Link>
         <div className="flex gap-9 items-center">
           <ul className="flex gap-12 text-lg">
