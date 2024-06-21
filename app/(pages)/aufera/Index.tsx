@@ -2,8 +2,11 @@ import { arrowUpRight, auferaCover, auferaCoverDesk } from "@/assets/asset";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Overview from "./Overview";
-import UserPersona from "./UserPersonas";
+import Overview from "./(sections)/Overview";
+import UserPersona from "./(sections)/UserPersonas";
+import Research from "./(sections)/Research";
+import Prototyping from "./(sections)/Prototyping";
+import FinalProduct from "./(sections)/FinalProduct";
 
 const Aufera: React.FC = () => {
   return (
@@ -27,6 +30,9 @@ const Aufera: React.FC = () => {
 
       <Overview />
       <UserPersona />
+      <Research />
+      <Prototyping />
+      <FinalProduct />
     </>
   );
 };

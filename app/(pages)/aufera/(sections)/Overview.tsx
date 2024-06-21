@@ -1,4 +1,4 @@
-import { criteriaData, overviewData, questionsData } from "./_constants";
+import { criteriaData, overviewData, questionsData } from "../_constants";
 
 const Overview = () => {
   return (

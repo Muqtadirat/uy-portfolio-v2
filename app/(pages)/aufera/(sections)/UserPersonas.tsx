@@ -1,6 +1,6 @@
 import { azeezPersona } from "@/assets/asset";
 import Image from "next/image";
-import { persona } from "./_constants/persona";
+import { persona } from "../_constants/persona";
 
 const UserPersona = () => {
   return (
